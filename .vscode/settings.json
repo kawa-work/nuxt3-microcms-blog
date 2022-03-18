@@ -1,0 +1,17 @@
+{
+  /* Linter and Formatter */
+  // linter
+  "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  // adjust compatible
+  "css.validate": false,
+  "scss.validate": false
+}
