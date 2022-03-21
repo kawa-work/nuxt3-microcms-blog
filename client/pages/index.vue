@@ -1,24 +1,11 @@
-<script setup lang="ts">
-const { data } = await useFetch('blog', {
-  baseURL: 'https://template-blog.microcms.io/api/v1/',
-  headers: {
-    'X-MICROCMS-API-KEY': 'ca793716091e4212a5974ef31cc9c4056d30'
-  },
-  params: {
-    orders: '-createdAt'
-  }
-})
+<script setup>
+import ArticleCardList from '~/components/ArticleCardList.vue';
 </script>
 
 <template>
   <div>
-    <h1>Hello, Nuxt3!</h1>
-    <ul>
-      <li v-for="article in data.contents" :key="article.id">
-        <nuxt-link :to="`/blog/${article.id}`">
-          {{ article.title }}
-        </nuxt-link>
-      </li>
-    </ul>
+    <h1>Welcome to Nuxt3 + microCMS blog template</h1>
+    <p>This demo site is public in <a href="https://github.com/kawa-work/nuxt3-microcms-blog">HERE</a>. You can use this blog template with MIT license.</p>
+    <ArticleCardList></ArticleCardList>
   </div>
 </template>

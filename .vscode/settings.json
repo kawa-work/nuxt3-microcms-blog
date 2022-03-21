@@ -13,5 +13,8 @@
   "editor.formatOnType": true,
   // adjust compatible
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "[vue]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar"
+  }
 }

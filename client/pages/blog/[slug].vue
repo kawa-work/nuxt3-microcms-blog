@@ -13,11 +13,15 @@ const { data: article } = await useFetch(`/blog/${slug}`, {
 
 
 <template>
-  <main class="main">
-    <h1 class="title">{{ article.title }}</h1>
-    <p class="publishedAt">
-      <time :datetime="article.publishedAt" v-text="article.publishedAt" />
-    </p>
-    <div class="post" v-html="article.body" />
-  </main>
+  <v-container>
+    <v-row>
+      <v-col md="8">
+        <h1 class="title">{{ article.title }}</h1>
+        <p class="publishedAt">
+          <time :datetime="article.publishedAt" v-text="article.publishedAt" />
+        </p>
+        <div class="post" v-html="article.body" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
