@@ -9,7 +9,7 @@
     "stylelint": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore",
     "stylelintfix": "stylelint --fix **/*.{vue,css,scss} --ignore-path .gitignore",
     "format": "prettier -c .",
-    "formatfix": "prettier --fix -c ."
+    "formatfix": "prettier --write -c ."
   },
   "lint-staged": {
     "*.{js,ts,vue,json}": "prettier -c",

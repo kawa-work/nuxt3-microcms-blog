@@ -7,7 +7,7 @@
 
 ### Setup microCMS
 
-microCMSの[公式ページ](https://microcms.io/)からアカウントを作成し、以下のようにAPIスキーマを定義してします。
+microCMS の[公式ページ](https://microcms.io/)からアカウントを作成し、以下のように API スキーマを定義してします。
 
 TBA
 
@@ -36,4 +36,3 @@ yarn dev
 ```bash
 yarn build
 ```
-

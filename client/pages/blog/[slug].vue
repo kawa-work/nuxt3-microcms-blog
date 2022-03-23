@@ -11,7 +11,6 @@ const { data: article } = await useFetch(`/blog/${slug}`, {
 })
 </script>
 
-
 <template>
   <v-container>
     <v-row>
