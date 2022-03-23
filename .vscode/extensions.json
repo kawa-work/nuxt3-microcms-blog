@@ -4,5 +4,8 @@
     "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
     "johnsoncodehk.volar"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur"
   ]
 }
