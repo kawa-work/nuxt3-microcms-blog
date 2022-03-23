@@ -15,6 +15,13 @@
   "css.validate": false,
   "scss.validate": false,
   "[vue]": {
-    "editor.defaultFormatter": "johnsoncodehk.volar"
+    "editor.defaultFormatter": "johnsoncodehk.volar",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
   }
 }
