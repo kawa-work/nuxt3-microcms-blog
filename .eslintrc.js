@@ -9,7 +9,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
-    'prettier/vue',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
