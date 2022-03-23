@@ -17,9 +17,10 @@ const { data: article } = await useFetch(`/blog/${slug}`, {
       <v-col md="8">
         <h1 class="title">{{ article.title }}</h1>
         <p class="publishedAt">
-          <time :datetime="article.publishedAt" v-text="article.publishedAt" />
+          <time :datetime="article.publishedAt" v-text="article.publishedAt"></time>
         </p>
-        <div class="post" v-html="article.body" />
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div class="post" v-html="article.body"></div>
       </v-col>
     </v-row>
   </v-container>

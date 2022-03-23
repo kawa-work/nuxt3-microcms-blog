@@ -16,7 +16,7 @@ const linkList: Ref<Record<string, string>[]> = ref([
 
 <template>
   <v-item-group>
-    <v-item v-for="link in linkList">
+    <v-item v-for="link in linkList" :key="link.name">
       <v-btn :href="link.url" target="_blank" icon>
         <v-icon>fa-brands fa-{{ link.name }}</v-icon>
       </v-btn>
