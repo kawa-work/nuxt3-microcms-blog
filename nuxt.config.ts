@@ -39,8 +39,10 @@ export default defineNuxtConfig({
           )
           if (~vuetifyIdx && vuetifyIdx < vueIdx) {
             const vuetifyPlugin = config.plugins[vuetifyIdx]
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             config.plugins.splice(vuetifyIdx, 1)
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             config.plugins.splice(vueIdx, 0, vuetifyPlugin)
           }
