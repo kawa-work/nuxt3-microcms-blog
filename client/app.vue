@@ -8,7 +8,9 @@ import TheSidebar from '~/components/TheSidebar.vue'
     <TheHeader></TheHeader>
     <TheSidebar></TheSidebar>
     <v-main>
-      <NuxtPage />
+      <v-container>
+        <NuxtPage />
+      </v-container>
     </v-main>
   </v-app>
 </template>
