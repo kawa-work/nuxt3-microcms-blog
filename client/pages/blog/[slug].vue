@@ -20,11 +20,15 @@ const { data: article } = await useFetch(`/blog/${slug}`, {
       </v-chip-group>
       <p class="publishedAt">
         公開日:
-        <time :datetime="article.publishedAt" v-text="article.publishedAt"></time>
+        <time
+          :datetime="article.publishedAt"
+        >{{ new Date(article.publishedAt).toLocaleDateString() }}</time>
       </p>
       <p class="publishedAt">
         最終更新日:
-        <time :datetime="article.publishedAt" v-text="article.revisedAt"></time>
+        <time
+          :datetime="article.publishedAt"
+        >{{ new Date(article.revisedAt).toLocaleDateString() }}</time>
       </p>
       <v-img :src="article.thumbnail.url"></v-img>
       <!-- eslint-disable-next-line vue/no-v-html -->
@@ -34,7 +38,7 @@ const { data: article } = await useFetch(`/blog/${slug}`, {
 </template>
 
 <style>
-.body img{
+.body img {
   max-width: 100%;
 }
 </style>
