@@ -1,0 +1,3 @@
+<template>
+  <ArticleCardList></ArticleCardList>
+</template>
