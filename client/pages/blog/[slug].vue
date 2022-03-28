@@ -1,14 +1,9 @@
 <script setup>
-const ctx = useRuntimeConfig()
+
 const route = useRoute()
 const slug = route.params.slug
 
-const { data: article } = await useFetch(`/blog/${slug}`, {
-  baseURL: ctx.baseURL,
-  headers: {
-    'X-MICROCMS-API-KEY': ctx.apiKey,
-  },
-})
+const { data: article } = await useFetch('/api/blog', { params: { slug } })
 </script>
 
 <template>

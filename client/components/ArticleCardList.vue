@@ -2,8 +2,6 @@
 import { MicroCMSListResponse, MicroCMSImage } from 'microcms-js-sdk'
 import ArticleCard from "~/components/ArticleCard.vue"
 
-const ctx = useRuntimeConfig()
-
 type Blog = {
   title: string
   body: string
@@ -11,15 +9,7 @@ type Blog = {
   thumbnail: MicroCMSImage
 }
 
-const { data } = await useFetch<MicroCMSListResponse<Blog>>('blog', {
-  baseURL: ctx.baseURL,
-  headers: {
-    'X-MICROCMS-API-KEY': ctx.apiKey,
-  },
-  params: {
-    orders: '-createdAt',
-  },
-})
+const { data } = await useFetch<MicroCMSListResponse<Blog>>('/api/blogList')
 </script>
 
 <template>
