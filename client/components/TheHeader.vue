@@ -1,7 +1,3 @@
-<script setup>
-import LinkList from './LinkList.vue'
-</script>
-
 <template>
   <v-app-bar color="grey-lighten-2">
     <v-row justify="space-between">

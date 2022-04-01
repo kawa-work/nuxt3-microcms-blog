@@ -1,17 +1,27 @@
+<script setup lang="ts">
+const { data: baseInfo } = await useFetch('/api/baseInfo')
+</script>
+
 <template>
   <v-navigation-drawer app>
     <v-list class="d-flex flex-column align-center py-12">
       <v-list-item>
         <v-list-item-avatar>
-          <v-img src="/icon.png" width="32" height="32"></v-img>
+          <v-img :src="`${baseInfo['author-icon']['url']}`" width="32" height="32"></v-img>
         </v-list-item-avatar>
       </v-list-item>
 
       <v-list-item link>
-        <v-list-item-content class="text-center">
-          <v-list-item-title class="text-h6">kawa-work</v-list-item-title>
-          <v-list-item-subtitle>Nuxt3練習中</v-list-item-subtitle>
-        </v-list-item-content>
+        <!-- TODO: enable v-list-item-content (cannot use this component 2022/4/1) -->
+        <!-- <v-list-item-content class="text-center"> -->
+        <div class="text-center">
+          <v-list-item-title class="text-h6">{{ baseInfo['author-name'] }}</v-list-item-title>
+          <v-list-item-subtitle>{{ baseInfo['author-profile'] }}</v-list-item-subtitle>
+        <!-- </v-list-item-content> -->
+        </div>
+      </v-list-item>
+      <v-list-item>
+        <LinkList></LinkList>
       </v-list-item>
     </v-list>
 
