@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import { MicroCMSImage, MicroCMSListContent as MicroCMSBaseContent } from 'microcms-js-sdk'
-
-type Blog = {
-  title: string
-  body: string
-  tag: string[]
-  thumbnail: MicroCMSImage
-}
+import { MicroCMSListContent as MicroCMSBaseContent } from 'microcms-js-sdk'
+import { Blog } from '../server/api/types';
 
 const { article } = defineProps<{ article: Blog & MicroCMSBaseContent }>()
 </script>

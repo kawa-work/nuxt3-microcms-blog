@@ -1,13 +1,7 @@
 <script setup lang="ts">
-import { MicroCMSListResponse, MicroCMSImage } from 'microcms-js-sdk'
+import { MicroCMSListResponse } from 'microcms-js-sdk'
+import { Blog } from '../server/api/types';
 import ArticleCard from "~/components/ArticleCard.vue"
-
-type Blog = {
-  title: string
-  body: string
-  tag: string[]
-  thumbnail: MicroCMSImage
-}
 
 const { data } = await useFetch<MicroCMSListResponse<Blog>>('/api/blogList')
 </script>
