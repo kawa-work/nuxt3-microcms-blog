@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { data: baseInfo } = await useFetch('/api/baseInfo')
+const { baseInfo } = useBaseInfo()
+
 </script>
 
 <template>
