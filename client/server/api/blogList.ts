@@ -12,7 +12,7 @@ export default async () => {
       'X-MICROCMS-API-KEY': config.apiKey,
     },
     params: {
-      orders: '-createdAt',
+      orders: '-publishedAt',
     },
   })
   return data
