@@ -8,7 +8,7 @@ export default async (req: IncomingMessage) => {
   const params = new URLSearchParams(req.url)
 
   const data = await $fetch<MicroCMSBaseContent & Blog>(
-    `/blog/${params.get('slug')}`,
+    `/blog/${params.get('id')}`,
     {
       baseURL: config.baseURL,
       headers: {

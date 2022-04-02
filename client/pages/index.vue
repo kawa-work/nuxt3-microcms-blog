@@ -6,6 +6,6 @@ const { baseInfo } = useBaseInfo()
   <div>
     <h1>{{ baseInfo['site-title'] }}</h1>
     <p>{{ baseInfo['site-subtitle'] }}</p>
-    <ArticleCardList></ArticleCardList>
+    <ArticleCardList :limit="3"></ArticleCardList>
   </div>
 </template>

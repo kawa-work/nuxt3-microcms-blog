@@ -1,9 +1,10 @@
 <script setup>
 
 const route = useRoute()
-const slug = route.params.slug
+const id = route.params.id
 
-const { data: article } = await useFetch('/api/blog', { params: { slug } })
+const { blog: article, fetchBlog } = useBlog()
+await fetchBlog(id)
 </script>
 
 <template>

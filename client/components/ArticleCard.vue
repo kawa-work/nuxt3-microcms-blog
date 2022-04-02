@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { MicroCMSListContent as MicroCMSBaseContent } from 'microcms-js-sdk'
+import { DeepReadonly } from 'vue';
 import { Blog } from '../server/api/types';
 
-const { article } = defineProps<{ article: Blog & MicroCMSBaseContent }>()
+const { article } = defineProps<{ article: DeepReadonly<Blog & MicroCMSBaseContent> }>()
 </script>
 
 <template>
