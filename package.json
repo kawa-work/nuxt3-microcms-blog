@@ -16,12 +16,20 @@
     "*.{js,ts,vue}": "eslint",
     "*.{css,scss,vue}": "stylelint"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@fortawesome/fontawesome-free": "^6.1.0",
     "@nuxtjs/eslint-config-typescript": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
