@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/scss/style.scss',
-    'vuetify/styles'
+    'vuetify/styles',
   ],
   vite: {
     plugins: [
