@@ -1,0 +1,30 @@
+.richtext {
+    line-height: 1.7!important;
+    h1, h2, h3, h4, h5, h6 {
+        padding-bottom: 12px;
+    }
+    h1 {
+        padding-top: 48px;
+    }
+    h2 {
+        padding-top: 36px;
+    }
+    h3 {
+        padding-top: 32px;
+    }
+    h4 {
+        padding-top: 24px;
+    }
+    h5 {
+        padding-top: 16px;
+    }
+    h6 {
+        padding-top: 12px;
+    }
+    ul, ol {
+        padding-left: 8px;
+    }
+    img {
+        max-width: 100%;
+    }
+}

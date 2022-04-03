@@ -25,7 +25,10 @@ export default defineNuxtConfig({
     baseURL: process.env.NODE_ENV !== 'production' ? BASE_URL : undefined,
     apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined,
   },
-  css: ['vuetify/styles'],
+  css: [
+    '~/assets/scss/style.scss',
+    'vuetify/styles'
+  ],
   vite: {
     plugins: [
       vuetify(),
