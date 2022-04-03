@@ -3,12 +3,12 @@ const { baseInfo } = useBaseInfo()
 </script>
 
 <template>
-  <v-row justify="center" align-content="center">
+  <v-row justify="center">
     <v-col cols="10">
-      <v-card flat>
-        <v-card-title>{{ baseInfo['site-title'] }}</v-card-title>
+      <v-card flat class="mt-4 mt-md-16">
+        <v-card-title class="mt-12">{{ baseInfo['site-title'] }}</v-card-title>
         <v-card-subtitle>{{ baseInfo['site-subtitle'] }}</v-card-subtitle>
-        <v-card-text class="mt-12">
+        <v-card-text class="mt-8">
           <ArticleCardList :limit="3"></ArticleCardList>
         </v-card-text>
       </v-card>
