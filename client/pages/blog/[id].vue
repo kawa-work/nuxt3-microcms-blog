@@ -8,8 +8,8 @@ await fetchBlog(id)
 </script>
 
 <template>
-  <v-row>
-    <v-col md="8">
+  <v-row justify="center" align-content="center">
+    <v-col cols="10">
       <h1 class="title">{{ article.title }}</h1>
       <v-chip-group>
         <v-chip v-for="tag in article.tag" :key="tag">{{ tag }}</v-chip>
@@ -28,7 +28,7 @@ await fetchBlog(id)
       </p>
       <v-img :src="article.thumbnail.url"></v-img>
       <!-- eslint-disable-next-line vue/no-v-html -->
-      <div class="body" v-html="article.body"></div>
+      <div class="body richtext" v-html="article.body"></div>
     </v-col>
   </v-row>
 </template>

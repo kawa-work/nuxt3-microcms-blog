@@ -3,9 +3,15 @@ const { baseInfo } = useBaseInfo()
 </script>
 
 <template>
-  <div>
-    <h1>{{ baseInfo['site-title'] }}</h1>
-    <p>{{ baseInfo['site-subtitle'] }}</p>
-    <ArticleCardList :limit="3"></ArticleCardList>
-  </div>
+  <v-row justify="center" align-content="center">
+    <v-col cols="10">
+      <v-card flat>
+        <v-card-title>{{ baseInfo['site-title'] }}</v-card-title>
+        <v-card-subtitle>{{ baseInfo['site-subtitle'] }}</v-card-subtitle>
+        <v-card-text class="mt-12">
+          <ArticleCardList :limit="3"></ArticleCardList>
+        </v-card-text>
+      </v-card>
+    </v-col>
+  </v-row>
 </template>

@@ -7,7 +7,7 @@ const { article } = defineProps<{ article: DeepReadonly<Blog & MicroCMSBaseConte
 </script>
 
 <template>
-  <v-card class="mx-auto my-12" :to="`/blog/${article.id}`">
+  <v-card class="mx-auto my-2" :to="`/blog/${article.id}`">
     <v-img :src="article.thumbnail.url"></v-img>
     <v-card-title>{{ article.title }}</v-card-title>
     <v-card-text>
