@@ -25,6 +25,9 @@ export default defineNuxtConfig({
     baseURL: process.env.NODE_ENV !== 'production' ? BASE_URL : undefined,
     apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined,
   },
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+  ],
   css: [
     '~/assets/scss/style.scss',
     'vuetify/styles',
