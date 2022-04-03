@@ -13,7 +13,7 @@ await fetchBlog(id)
       <v-card flat class="my-12">
         <v-card-title tag="h1" class="text-h4 text-md-h2 py-4">{{ article.title }}</v-card-title>
         <v-card-actions>
-          <v-chip-group class="pb-0">
+          <v-chip-group column class="pb-0">
             <v-chip v-for="tag in article.tag" :key="tag">{{ tag }}</v-chip>
           </v-chip-group>
         </v-card-actions>
