@@ -64,5 +64,8 @@ yarn build
 ### 8. Deploy
 - Githubのリポジトリに更新があると自動的にNetlifyにデプロイ
 
-
+### 9. Google Analytics
+`Optional`
+- Google Analyticsの管理画面でGA4を設定
+- 上記で設定したGA4のIDを環境変数`GTAG`に設定
 
