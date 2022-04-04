@@ -8,6 +8,19 @@
 
 `Use this template`から自分のリポジトリを作って利用します。
 
+## Functions
+- [x] Nuxt3
+- [x] MicroCMS
+- [x] Vuetify3
+- [x] SSR
+- [x] Volar
+- [x] TypeScript
+- [x] Prettier/Eslint
+- [x] Husky
+- [x] GA4
+- [ ] OGP
+
+
 ## How to use
 
 ### 1. Use this template
