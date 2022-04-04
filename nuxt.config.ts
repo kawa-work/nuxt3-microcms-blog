@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 import vuetify from '@vuetify/vite-plugin'
 
-const { BASE_URL, API_KEY } = process.env
+const { BASE_URL, API_KEY, GTAG } = process.env
 
 declare module 'vite' {
   interface UserConfig {
@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   publicRuntimeConfig: {
     baseURL: process.env.NODE_ENV !== 'production' ? BASE_URL : undefined,
     apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined,
+    gtag: GTAG,
   },
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
