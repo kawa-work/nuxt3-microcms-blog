@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.0.0...v1.1.0) (2022-04-06)
+
+
+### Features
+
+* add header for mobile and laptop width ([ff9f8fa](https://github.com/kawa-work/nuxt3-microcms-blog/commit/ff9f8faed9afa2018b74f8c38326ccceee066c4f)), closes [#4](https://github.com/kawa-work/nuxt3-microcms-blog/issues/4)
+
 ## 1.0.0 (2022-04-04)
 
 
