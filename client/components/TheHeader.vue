@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const drawer = useState("drawer", () => false)
+const { drawer } = useDrawer()
 </script>
 
 <template>

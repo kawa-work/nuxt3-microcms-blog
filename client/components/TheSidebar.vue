@@ -1,6 +1,17 @@
 <script setup lang="ts">
 const { baseInfo } = useBaseInfo()
-const drawer = useState("drawer", () => false)
+const { drawer } = useDrawer()
+const nuxtApp = useNuxtApp()
+const resize = () => {
+  if (window.innerWidth > nuxtApp.$vuetify.breakpoints.lg) {
+    drawer.value = true
+  } else {
+    drawer.value = false
+  }
+}
+onMounted(() => {
+  window.addEventListener('resize', resize)
+})
 </script>
 
 <template>
