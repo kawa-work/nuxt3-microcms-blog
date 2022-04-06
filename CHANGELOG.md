@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.1.0...v1.1.1) (2022-04-06)
+
+
+### Bug Fixes
+
+* display sidebar at <lg width ([d512d71](https://github.com/kawa-work/nuxt3-microcms-blog/commit/d512d71a8b586810717ab4dfcac27d5d2d85f7a7)), closes [#4](https://github.com/kawa-work/nuxt3-microcms-blog/issues/4)
+
 ## [1.1.0](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.0.0...v1.1.0) (2022-04-06)
 
 
