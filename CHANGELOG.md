@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.1.1...v1.1.2) (2022-04-06)
+
+
+### Bug Fixes
+
+* display sidebar at the first view ([23a8393](https://github.com/kawa-work/nuxt3-microcms-blog/commit/23a83930ec4e9b1927aeae211e28c32d1791d5fb)), closes [#4](https://github.com/kawa-work/nuxt3-microcms-blog/issues/4)
+
 ### [1.1.1](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.1.0...v1.1.1) (2022-04-06)
 
 
