@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const { baseInfo } = useBaseInfo()
+const drawer = useState("drawer", () => false)
 </script>
 
 <template>
-  <v-navigation-drawer app>
+  <v-navigation-drawer v-model="drawer" app>
     <v-list class="d-flex flex-column align-center py-12">
       <v-list-item>
         <v-list-item-avatar>

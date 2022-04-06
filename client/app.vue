@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <TheSidebar></TheSidebar>
+    <TheHeader></TheHeader>
     <v-main>
       <transition>
         <v-container>
