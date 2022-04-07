@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const { baseInfo, fetchBaseInfo } = useBaseInfo()
+if (baseInfo.value === null) {
+  await fetchBaseInfo()
+}
+</script>
+
 <template>
   <v-app>
     <TheSidebar></TheSidebar>
