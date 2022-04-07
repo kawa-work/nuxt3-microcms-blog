@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.1.2...v1.1.3) (2022-04-07)
+
+
+### Bug Fixes
+
+* solve error with no active component when onServer Prefetch is called ([9bbd8bb](https://github.com/kawa-work/nuxt3-microcms-blog/commit/9bbd8bb28ae089600fa23402125496f4130741e6)), closes [#6](https://github.com/kawa-work/nuxt3-microcms-blog/issues/6)
+
 ### [1.1.2](https://github.com/kawa-work/nuxt3-microcms-blog/compare/v1.1.1...v1.1.2) (2022-04-06)
 
 
